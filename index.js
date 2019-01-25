@@ -1,7 +1,8 @@
 const driver = {}
 
 function updateDriverWithKeyAndValue(driver, key, value) {
-  driver.key = value;
-  
+  copyOfDriver = {...driver}
+  copyOfDriver.key = value;
+  return copyOfDriver;
 }
 
